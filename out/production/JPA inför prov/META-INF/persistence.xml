@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="Eclipselink_JPA">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <class>main.Movie</class>
+        <class>main.Director</class>
+        <properties>
+            <property name="eclipselink.jdbc.url" value="jdbc:mysql://localhost:3306/jpamoviestore?verifyServerCertificate=false&amp;useSSL=true"/>
+            <property name="eclipselink.jdbc.driver"  value="com.mysql.jdbc.Driver"/>
+            <property name="eclipselink.jdbc.user" value="root"/>
+            <property name="eclipselink.jdbc.password" value="GuildWars2"/>
+            <property name="eclipselink.logging.level" value="FINE"/>
+            <property name="eclipselink.ddl-generation" value="create-tables"/>
+        </properties>
+    </persistence-unit>
+</persistence>
